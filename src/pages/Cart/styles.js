@@ -65,10 +65,19 @@ export const ProductTable = styled.table`
     }
 
     input {
-            border: 1px solid #DDD;
-            color: #777;
-            padding: 6px;
-            width: 50px;
+        border: 1px solid #DDD;
+        color: #777;
+        padding: 6px;
+        width: 50px;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+    
+    input[type=number] {
+    -moz-appearance: textfield;
     }
 
     button {
